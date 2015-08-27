@@ -1,0 +1,703 @@
+Archive member included because of file (symbol)
+
+../common/lib/uni_alloc.a(FREE.o)
+                              ricks_netfpga_dns.o (anl_free)
+../common/lib/uni_alloc.a(INIT_MEM.o)
+                              ricks_netfpga_dns.o (anl_init_mempool)
+../common/lib/uni_alloc.a(MALLOC.o)
+                              ricks_netfpga_dns.o (anl_malloc)
+../common/lib/uni_alloc.a(REALLOC.o)
+                              ricks_netfpga_dns.o (anl_realloc)
+/home/rickwallen/netthreads/compiler/lib/libspe.a(divmod.o)
+                              arp.o (__modsi3)
+/home/rickwallen/netthreads/compiler/lib/libspe.a(udivmod.o)
+                              support.o (__udivsi3)
+/home/rickwallen/netthreads/compiler/lib/libspe.a(udivmodsi4.o)
+                              /home/rickwallen/netthreads/compiler/lib/libspe.a(divmod.o) (udivmodsi4)
+/home/rickwallen/netthreads/compiler/lib/libspe.a(tm4eembc.o)
+                              ricks_netfpga_dns.o (gettimeofday)
+/home/rickwallen/netthreads/compiler/lib/mylibc.a(memset.o)
+                              ricks_netfpga_dns.o (memset)
+/home/rickwallen/netthreads/compiler/lib/mylibc.a(strcat.o)
+                              ricks_netfpga_dns.o (strcat)
+/home/rickwallen/netthreads/compiler/lib/mylibc.a(strcpy.o)
+                              ricks_netfpga_dns.o (strcpy)
+/home/rickwallen/netthreads/compiler/lib/mylibc.a(strtol.o)
+                              ricks_netfpga_dns.o (strtol)
+/home/rickwallen/netthreads/compiler/lib/mylibc.a(strchr.o)
+                              ricks_netfpga_dns.o (strchr)
+/home/rickwallen/netthreads/compiler/lib/mylibc.a(memcmp.o)
+                              ricks_netfpga_dns.o (memcmp)
+/home/rickwallen/netthreads/compiler/lib/mylibc.a(strtok.o)
+                              ricks_netfpga_dns.o (strtok)
+/home/rickwallen/netthreads/compiler/lib/mylibc.a(strtok_r.o)
+                              /home/rickwallen/netthreads/compiler/lib/mylibc.a(strtok.o) (__strtok_r)
+/home/rickwallen/netthreads/compiler/lib/mylibc.a(strlen.o)
+                              ricks_netfpga_dns.o (strlen)
+/home/rickwallen/netthreads/compiler/lib/mylibc.a(strcmp.o)
+                              ricks_netfpga_dns.o (strcmp)
+/home/rickwallen/netthreads/compiler/lib/mylibc.a(memcpy.o)
+                              memcpy.o (memcpy)
+/home/rickwallen/netthreads/compiler/lib/mylibc.a(ctype_.o)
+                              /home/rickwallen/netthreads/compiler/lib/mylibc.a(strtol.o) (__ctype_ptr)
+/home/rickwallen/netthreads/compiler/lib/mylibc.a(impure.o)
+                              /home/rickwallen/netthreads/compiler/lib/mylibc.a(strtol.o) (_impure_ptr)
+/home/rickwallen/netthreads/compiler/lib/libgcc.a(_addsub_df.o)
+                              ricks_netfpga_dns.o (__adddf3)
+/home/rickwallen/netthreads/compiler/lib/libgcc.a(_mul_df.o)
+                              ricks_netfpga_dns.o (__muldf3)
+/home/rickwallen/netthreads/compiler/lib/libgcc.a(_si_to_df.o)
+                              ricks_netfpga_dns.o (__floatsidf)
+/home/rickwallen/netthreads/compiler/lib/libgcc.a(_thenan_df.o)
+                              /home/rickwallen/netthreads/compiler/lib/libgcc.a(_addsub_df.o) (__thenan_df)
+/home/rickwallen/netthreads/compiler/lib/libgcc.a(_pack_df.o)
+                              /home/rickwallen/netthreads/compiler/lib/libgcc.a(_addsub_df.o) (__pack_d)
+/home/rickwallen/netthreads/compiler/lib/libgcc.a(_unpack_df.o)
+                              /home/rickwallen/netthreads/compiler/lib/libgcc.a(_addsub_df.o) (__unpack_d)
+/home/rickwallen/netthreads/compiler/lib/libspe.a(mulsi.o)
+                              /home/rickwallen/netthreads/compiler/lib/mylibc.a(strtol.o) (__mulsi3)
+
+Allocating common symbols
+Common symbol       size              file
+
+HEAP_AVAILABLE      0x4               ricks_netfpga_dns.o
+sp_mem_pool         0x20              ricks_netfpga_dns.o
+sp_mem_allocated    0x20              ricks_netfpga_dns.o
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+*default*        0x0000000000000000 0xffffffffffffffff
+
+Linker script and memory map
+
+LOAD nf2.o
+LOAD support.o
+LOAD support_no_inline.o
+LOAD memcpy.o
+LOAD ricks_netfpga_dns.o
+LOAD arp.o
+LOAD dev.o
+LOAD pktbuff.o
+LOAD ../common/lib/uni_alloc.a
+                0x0000000020000000                PROVIDE (__executable_start, 0x20000000)
+                0x0000000020000000                . = 0x20000000
+
+.interp
+ *(.interp)
+
+.dynamic
+ *(.dynamic)
+
+.hash
+ *(.hash)
+
+.dynsym
+ *(.dynsym)
+
+.dynstr
+ *(.dynstr)
+
+.gnu.version
+ *(.gnu.version)
+
+.gnu.version_d
+ *(.gnu.version_d)
+
+.gnu.version_r
+ *(.gnu.version_r)
+
+.rel.dyn
+ *(.rel.init)
+ *(.rel.text .rel.text.* .rel.gnu.linkonce.t.*)
+ *(.rel.fini)
+ *(.rel.rodata .rel.rodata.* .rel.gnu.linkonce.r.*)
+ *(.rel.data.rel.ro*)
+ *(.rel.data .rel.data.* .rel.gnu.linkonce.d.*)
+ *(.rel.tdata .rel.tdata.* .rel.gnu.linkonce.td.*)
+ *(.rel.tbss .rel.tbss.* .rel.gnu.linkonce.tb.*)
+ *(.rel.ctors)
+ *(.rel.dtors)
+ *(.rel.got)
+ *(.rel.sdata .rel.sdata.* .rel.gnu.linkonce.s.*)
+ *(.rel.sbss .rel.sbss.* .rel.gnu.linkonce.sb.*)
+ *(.rel.sdata2 .rel.sdata2.* .rel.gnu.linkonce.s2.*)
+ *(.rel.sbss2 .rel.sbss2.* .rel.gnu.linkonce.sb2.*)
+ *(.rel.bss .rel.bss.* .rel.gnu.linkonce.b.*)
+
+.rela.dyn
+ *(.rela.init)
+ *(.rela.text .rela.text.* .rela.gnu.linkonce.t.*)
+ *(.rela.fini)
+ *(.rela.rodata .rela.rodata.* .rela.gnu.linkonce.r.*)
+ *(.rela.data .rela.data.* .rela.gnu.linkonce.d.*)
+ *(.rela.tdata .rela.tdata.* .rela.gnu.linkonce.td.*)
+ *(.rela.tbss .rela.tbss.* .rela.gnu.linkonce.tb.*)
+ *(.rela.ctors)
+ *(.rela.dtors)
+ *(.rela.got)
+ *(.rela.sdata .rela.sdata.* .rela.gnu.linkonce.s.*)
+ *(.rela.sbss .rela.sbss.* .rela.gnu.linkonce.sb.*)
+ *(.rela.sdata2 .rela.sdata2.* .rela.gnu.linkonce.s2.*)
+ *(.rela.sbss2 .rela.sbss2.* .rela.gnu.linkonce.sb2.*)
+ *(.rela.bss .rela.bss.* .rela.gnu.linkonce.b.*)
+
+.rel.plt
+ *(.rel.plt)
+
+.rela.plt
+ *(.rela.plt)
+
+.init
+ *(.init)
+
+.plt
+ *(.plt)
+
+.text           0x0000000020000000     0xa020
+                0x0000000020000000                _ftext = .
+ *(.text .stub .text.* .gnu.linkonce.t.*)
+ .text          0x0000000020000000      0x23c nf2.o
+                0x00000000200000f4                _t5
+                0x000000002000015c                _t7
+                0x0000000020000190                _t8
+                0x0000000020000000                _start
+                0x00000000200001c0                _t9
+                0x0000000020000128                _t6
+                0x0000000020000030                _t1
+                0x00000000200000c0                _t4
+                0x0000000020000060                _t2
+                0x00000000200001f0                _exit
+                0x0000000020000090                _t3
+ .text.nf_pktout_init
+                0x000000002000023c       0x58 support.o
+                0x000000002000023c                nf_pktout_init
+ .text.nf_pktout_alloc
+                0x0000000020000294       0xd8 support.o
+                0x0000000020000294                nf_pktout_alloc
+ .text.nf_pktout_send
+                0x000000002000036c       0xb0 support.o
+                0x000000002000036c                nf_pktout_send
+ .text.init_stack
+                0x000000002000041c       0x40 support.o
+                0x000000002000041c                init_stack
+ .text.nf_pktin_init
+                0x000000002000045c       0x54 support.o
+                0x000000002000045c                nf_pktin_init
+ .text.nf_pktout_free
+                0x00000000200004b0       0x5c support.o
+                0x00000000200004b0                nf_pktout_free
+ .text.nf_unlock
+                0x000000002000050c       0x10 support_no_inline.o
+                0x000000002000050c                nf_unlock
+ .text.nf_lock  0x000000002000051c       0x10 support_no_inline.o
+                0x000000002000051c                nf_lock
+ .text.nf_tid   0x000000002000052c       0x10 support_no_inline.o
+                0x000000002000052c                nf_tid
+ .text.myisalnum
+                0x000000002000053c      0x1c8 ricks_netfpga_dns.o
+                0x000000002000053c                myisalnum
+ .text.hdrToStr
+                0x0000000020000704       0x88 ricks_netfpga_dns.o
+                0x0000000020000704                hdrToStr
+ .text.strToHdr
+                0x000000002000078c       0x90 ricks_netfpga_dns.o
+                0x000000002000078c                strToHdr
+ .text.process_arp
+                0x000000002000081c      0x1d0 ricks_netfpga_dns.o
+                0x000000002000081c                process_arp
+ .text.searchTrie
+                0x00000000200009ec      0x230 ricks_netfpga_dns.o
+                0x00000000200009ec                searchTrie
+ .text.process_icmp
+                0x0000000020000c1c      0x264 ricks_netfpga_dns.o
+                0x0000000020000c1c                process_icmp
+ .text.strToQry
+                0x0000000020000e80      0x164 ricks_netfpga_dns.o
+                0x0000000020000e80                strToQry
+ .text.checkDN  0x0000000020000fe4      0x200 ricks_netfpga_dns.o
+                0x0000000020000fe4                checkDN
+ .text.inet_pton6
+                0x00000000200011e4      0x3f0 ricks_netfpga_dns.o
+                0x00000000200011e4                inet_pton6
+ .text.createResRec
+                0x00000000200015d4     0x1600 ricks_netfpga_dns.o
+                0x00000000200015d4                createResRec
+ .text.addTrie  0x0000000020002bd4      0xebc ricks_netfpga_dns.o
+                0x0000000020002bd4                addTrie
+ .text.load_zone
+                0x0000000020003a90      0x960 ricks_netfpga_dns.o
+                0x0000000020003a90                load_zone
+ .text.findN    0x00000000200043f0      0x3d8 ricks_netfpga_dns.o
+                0x00000000200043f0                findN
+ .text.uDN      0x00000000200047c8      0x340 ricks_netfpga_dns.o
+                0x00000000200047c8                uDN
+ .text.revDN    0x0000000020004b08      0x4c4 ricks_netfpga_dns.o
+                0x0000000020004b08                revDN
+ .text.putResRecStr
+                0x0000000020004fcc     0x3b48 ricks_netfpga_dns.o
+                0x0000000020004fcc                putResRecStr
+ .text.process_dns
+                0x0000000020008b14      0x6d0 ricks_netfpga_dns.o
+                0x0000000020008b14                process_dns
+ .text.process_eth
+                0x00000000200091e4      0x1ec ricks_netfpga_dns.o
+                0x00000000200091e4                process_eth
+ .text.main     0x00000000200093d0      0x294 ricks_netfpga_dns.o
+                0x00000000200093d0                main
+ .text.arp_init
+                0x0000000020009664        0xc arp.o
+                0x0000000020009664                arp_init
+ .text.pkt_fill
+                0x0000000020009670       0x14 pktbuff.o
+                0x0000000020009670                pkt_fill
+ .text.pkt_free
+                0x0000000020009684       0x30 pktbuff.o
+                0x0000000020009684                pkt_free
+ .text.fill_ioq
+                0x00000000200096b4       0x34 pktbuff.o
+                0x00000000200096b4                fill_ioq
+ .text.anl_free
+                0x00000000200096e8       0x94 ../common/lib/uni_alloc.a(FREE.o)
+                0x00000000200096e8                anl_free
+ .text.anl_init_mempool
+                0x000000002000977c       0x10 ../common/lib/uni_alloc.a(INIT_MEM.o)
+                0x000000002000977c                anl_init_mempool
+ .text.anl_malloc
+                0x000000002000978c       0x64 ../common/lib/uni_alloc.a(MALLOC.o)
+                0x000000002000978c                anl_malloc
+ .text.__udivsi3
+                0x00000000200097f0        0x8 /home/rickwallen/netthreads/compiler/lib/libspe.a(udivmod.o)
+                0x00000000200097f0                __udivsi3
+ .text.__umodsi3
+                0x00000000200097f8        0x8 /home/rickwallen/netthreads/compiler/lib/libspe.a(udivmod.o)
+                0x00000000200097f8                __umodsi3
+ .text.udivmodsi4
+                0x0000000020009800       0x94 /home/rickwallen/netthreads/compiler/lib/libspe.a(udivmodsi4.o)
+                0x0000000020009800                udivmodsi4
+ .text.memset   0x0000000020009894       0xd4 /home/rickwallen/netthreads/compiler/lib/mylibc.a(memset.o)
+                0x0000000020009894                memset
+ .text.strcat   0x0000000020009968       0x94 /home/rickwallen/netthreads/compiler/lib/mylibc.a(strcat.o)
+                0x0000000020009968                strcat
+ .text.strcpy   0x00000000200099fc       0x8c /home/rickwallen/netthreads/compiler/lib/mylibc.a(strcpy.o)
+                0x00000000200099fc                strcpy
+ .text._strtol_r
+                0x0000000020009a88      0x25c /home/rickwallen/netthreads/compiler/lib/mylibc.a(strtol.o)
+                0x0000000020009a88                _strtol_r
+ .text.strtol   0x0000000020009ce4       0x1c /home/rickwallen/netthreads/compiler/lib/mylibc.a(strtol.o)
+                0x0000000020009ce4                strtol
+ .text.strchr   0x0000000020009d00       0xfc /home/rickwallen/netthreads/compiler/lib/mylibc.a(strchr.o)
+                0x0000000020009d00                strchr
+ .text.memcmp   0x0000000020009dfc       0x88 /home/rickwallen/netthreads/compiler/lib/mylibc.a(memcmp.o)
+                0x0000000020009dfc                memcmp
+ .text.strtok   0x0000000020009e84       0x10 /home/rickwallen/netthreads/compiler/lib/mylibc.a(strtok.o)
+                0x0000000020009e84                strtok
+ .text.__strtok_r
+                0x0000000020009e94       0xa4 /home/rickwallen/netthreads/compiler/lib/mylibc.a(strtok_r.o)
+                0x0000000020009e94                __strtok_r
+ .text.strlen   0x0000000020009f38       0x1c /home/rickwallen/netthreads/compiler/lib/mylibc.a(strlen.o)
+                0x0000000020009f38                strlen
+ .text.strcmp   0x0000000020009f54       0x68 /home/rickwallen/netthreads/compiler/lib/mylibc.a(strcmp.o)
+                0x0000000020009f54                strcmp
+ .text.memcpy   0x0000000020009fbc       0x30 /home/rickwallen/netthreads/compiler/lib/mylibc.a(memcpy.o)
+                0x0000000020009fbc                memcpy
+ .text.__mulsi3
+                0x0000000020009fec       0x34 /home/rickwallen/netthreads/compiler/lib/libspe.a(mulsi.o)
+                0x0000000020009fec                __mulsi3
+ *(.text.*personality*)
+ *(.gnu.warning)
+ *(.mips16.fn.*)
+ *(.mips16.call.*)
+
+.fini
+ *(.fini)
+                0x0000000004040000                . = 0x4040000
+                0x0000000004040000                . = (ALIGN (0x40000) - ((0x40000 - .) & 0x3ffff))
+                0x0000000004040000                . = (0x40000 DATA_SEGMENT_ALIGN 0x1000)
+                0x0000000004040000                PROVIDE (__etext, .)
+                0x0000000004040000                PROVIDE (_etext, .)
+                0x0000000004040000                PROVIDE (etext, .)
+
+.sdata2
+ *(.sdata2 .sdata2.* .gnu.linkonce.s2.*)
+
+.sbss2
+ *(.sbss2 .sbss2.* .gnu.linkonce.sb2.*)
+
+.eh_frame_hdr
+ *(.eh_frame_hdr)
+
+.eh_frame
+ *(.eh_frame)
+
+.gcc_except_table
+ *(.gcc_except_table)
+ *(.gcc_except_table.*)
+
+.eh_frame
+ *(.eh_frame)
+
+.gcc_except_table
+ *(.gcc_except_table)
+ *(.gcc_except_table.*)
+
+.tdata
+ *(.tdata .tdata.* .gnu.linkonce.td.*)
+
+.tbss
+ *(.tbss .tbss.* .gnu.linkonce.tb.*)
+ *(.tcommon)
+                0x0000000004040000                . = ALIGN (0x4)
+                0x0000000004040000                PROVIDE (__preinit_array_start, .)
+
+.preinit_array
+ *(.preinit_array)
+                0x0000000004040000                PROVIDE (__preinit_array_end, .)
+                0x0000000004040000                PROVIDE (__init_array_start, .)
+
+.init_array
+ *(.init_array)
+                0x0000000004040000                PROVIDE (__init_array_end, .)
+                0x0000000004040000                PROVIDE (__fini_array_start, .)
+
+.fini_array
+ *(.fini_array)
+                0x0000000004040000                PROVIDE (__fini_array_end, .)
+
+.ctors
+ *crtbegin*.o(.ctors)
+ *(EXCLUDE_FILE(*crtend*.o) .ctors)
+ *(SORT(.ctors.*))
+ *(.ctors)
+
+.dtors
+ *crtbegin*.o(.dtors)
+ *(EXCLUDE_FILE(*crtend*.o) .dtors)
+ *(SORT(.dtors.*))
+ *(.dtors)
+
+.jcr
+ *(.jcr)
+
+.data.rel.ro
+ *(.data.rel.ro.local)
+ *(.data.rel.ro*)
+                0x0000000004040000                . = (. DATA_SEGMENT_RELRO_END 0x0)
+
+.data           0x0000000004040000      0x400
+                0x0000000004040000                _fdata = .
+ *(.data .data.* .gnu.linkonce.d.*)
+ .data.impure_data
+                0x0000000004040000      0x400 /home/rickwallen/netthreads/compiler/lib/mylibc.a(impure.o)
+ *(.gnu.linkonce.d.*personality*)
+
+.data1
+ *(.data1)
+
+.rodata         0x0000000004040400      0x7e4
+ *(.rodata .rodata.* .gnu.linkonce.r.*)
+ .rodata.searchTrie
+                0x0000000004040400       0xd0 ricks_netfpga_dns.o
+ .rodata.xdigits.4263
+                0x00000000040404d0       0x14 ricks_netfpga_dns.o
+ .rodata.inet_pton6
+                0x00000000040404e4       0x68 ricks_netfpga_dns.o
+ .rodata.str1.4
+                0x000000000404054c      0x253 ricks_netfpga_dns.o
+                                        0x25c (size before relaxing)
+ *fill*         0x000000000404079f        0x1 00
+ .rodata.createResRec
+                0x00000000040407a0       0x74 ricks_netfpga_dns.o
+ .rodata.uDN    0x0000000004040814       0x68 ricks_netfpga_dns.o
+ .rodata        0x000000000404087c      0x100 ricks_netfpga_dns.o
+ .rodata.putResRecStr
+                0x000000000404097c       0xe8 ricks_netfpga_dns.o
+ .rodata._ctype_b
+                0x0000000004040a64      0x180 /home/rickwallen/netthreads/compiler/lib/mylibc.a(ctype_.o)
+ .rodata.str1.4
+                0x0000000004040be4        0x0 /home/rickwallen/netthreads/compiler/lib/mylibc.a(impure.o)
+                                          0x4 (size before relaxing)
+
+.rodata1
+ *(.rodata1)
+                0x0000000004040be4                . = .
+                0x0000000004048be0                _gp = (ALIGN (0x10) + 0x7ff0)
+
+.got
+ *(.got.plt)
+ *(.got)
+
+.sdata          0x0000000004040be4        0x8
+ *(.sdata .sdata.* .gnu.linkonce.s.*)
+ .sdata.__ctype_ptr
+                0x0000000004040be4        0x4 /home/rickwallen/netthreads/compiler/lib/mylibc.a(ctype_.o)
+                0x0000000004040be4                __ctype_ptr
+ .sdata._impure_ptr
+                0x0000000004040be8        0x4 /home/rickwallen/netthreads/compiler/lib/mylibc.a(impure.o)
+                0x0000000004040be8                _impure_ptr
+
+.lit8
+ *(.lit8)
+
+.lit4
+ *(.lit4)
+                0x0000000004040bec                _edata = .
+                0x0000000004040bec                PROVIDE (edata, .)
+                0x0000000004040bec                __bss_start = .
+                0x0000000004040bec                _fbss = .
+
+.sbss           0x0000000004040bec        0x8
+                0x0000000004040bec                PROVIDE (__sbss_start, .)
+                0x0000000004040bec                PROVIDE (___sbss_start, .)
+ *(.dynsbss)
+ *(.sbss .sbss.* .gnu.linkonce.sb.*)
+ .sbss.po_buffers_free
+                0x0000000004040bec        0x4 support.o
+ *(.scommon)
+ .scommon       0x0000000004040bf0        0x4 ricks_netfpga_dns.o
+                0x0000000004040bf0                HEAP_AVAILABLE
+                0x0000000004040bf4                PROVIDE (__sbss_end, .)
+                0x0000000004040bf4                PROVIDE (___sbss_end, .)
+
+.bss            0x0000000004040bf4       0x40
+ *(.dynbss)
+ *(.bss .bss.* .gnu.linkonce.b.*)
+ *(COMMON)
+ COMMON         0x0000000004040bf4       0x40 ricks_netfpga_dns.o
+                0x0000000004040bf4                sp_mem_pool
+                0x0000000004040c14                sp_mem_allocated
+                0x0000000004040c34                . = ALIGN (0x4)
+                0x0000000004040c34                . = ALIGN (0x4)
+
+.reginfo        0x0000000004040c34       0x18
+ *(.reginfo)
+ .reginfo       0x0000000004040c34       0x18 nf2.o
+                0x0000000004040c4c                . = ALIGN (0x4)
+                0x0000000004040c4c                _end = .
+                0x0000000004040c4c                PROVIDE (end, .)
+                0x0000000004040c4c                . = DATA_SEGMENT_END (.)
+
+.stab
+ *(.stab)
+
+.stabstr
+ *(.stabstr)
+
+.stab.excl
+ *(.stab.excl)
+
+.stab.exclstr
+ *(.stab.exclstr)
+
+.stab.index
+ *(.stab.index)
+
+.stab.indexstr
+ *(.stab.indexstr)
+
+.comment        0x0000000000000000      0x276
+ *(.comment)
+ .comment       0x0000000000000000       0x12 support.o
+ .comment       0x0000000000000012       0x12 support_no_inline.o
+ .comment       0x0000000000000024       0x12 memcpy.o
+ .comment       0x0000000000000036       0x12 ricks_netfpga_dns.o
+ .comment       0x0000000000000048       0x12 arp.o
+ .comment       0x000000000000005a       0x12 dev.o
+ .comment       0x000000000000006c       0x12 pktbuff.o
+ .comment       0x000000000000007e       0x12 ../common/lib/uni_alloc.a(FREE.o)
+ .comment       0x0000000000000090       0x12 ../common/lib/uni_alloc.a(INIT_MEM.o)
+ .comment       0x00000000000000a2       0x12 ../common/lib/uni_alloc.a(MALLOC.o)
+ .comment       0x00000000000000b4       0x12 ../common/lib/uni_alloc.a(REALLOC.o)
+ .comment       0x00000000000000c6       0x12 /home/rickwallen/netthreads/compiler/lib/libspe.a(divmod.o)
+ .comment       0x00000000000000d8       0x12 /home/rickwallen/netthreads/compiler/lib/libspe.a(udivmod.o)
+ .comment       0x00000000000000ea       0x12 /home/rickwallen/netthreads/compiler/lib/libspe.a(udivmodsi4.o)
+ .comment       0x00000000000000fc       0x12 /home/rickwallen/netthreads/compiler/lib/libspe.a(tm4eembc.o)
+ .comment       0x000000000000010e       0x12 /home/rickwallen/netthreads/compiler/lib/mylibc.a(memset.o)
+ .comment       0x0000000000000120       0x12 /home/rickwallen/netthreads/compiler/lib/mylibc.a(strcat.o)
+ .comment       0x0000000000000132       0x12 /home/rickwallen/netthreads/compiler/lib/mylibc.a(strcpy.o)
+ .comment       0x0000000000000144       0x12 /home/rickwallen/netthreads/compiler/lib/mylibc.a(strtol.o)
+ .comment       0x0000000000000156       0x12 /home/rickwallen/netthreads/compiler/lib/mylibc.a(strchr.o)
+ .comment       0x0000000000000168       0x12 /home/rickwallen/netthreads/compiler/lib/mylibc.a(memcmp.o)
+ .comment       0x000000000000017a       0x12 /home/rickwallen/netthreads/compiler/lib/mylibc.a(strtok.o)
+ .comment       0x000000000000018c       0x12 /home/rickwallen/netthreads/compiler/lib/mylibc.a(strtok_r.o)
+ .comment       0x000000000000019e       0x12 /home/rickwallen/netthreads/compiler/lib/mylibc.a(strlen.o)
+ .comment       0x00000000000001b0       0x12 /home/rickwallen/netthreads/compiler/lib/mylibc.a(strcmp.o)
+ .comment       0x00000000000001c2       0x12 /home/rickwallen/netthreads/compiler/lib/mylibc.a(memcpy.o)
+ .comment       0x00000000000001d4       0x12 /home/rickwallen/netthreads/compiler/lib/mylibc.a(ctype_.o)
+ .comment       0x00000000000001e6       0x12 /home/rickwallen/netthreads/compiler/lib/mylibc.a(impure.o)
+ .comment       0x00000000000001f8       0x12 /home/rickwallen/netthreads/compiler/lib/libgcc.a(_addsub_df.o)
+ .comment       0x000000000000020a       0x12 /home/rickwallen/netthreads/compiler/lib/libgcc.a(_mul_df.o)
+ .comment       0x000000000000021c       0x12 /home/rickwallen/netthreads/compiler/lib/libgcc.a(_si_to_df.o)
+ .comment       0x000000000000022e       0x12 /home/rickwallen/netthreads/compiler/lib/libgcc.a(_thenan_df.o)
+ .comment       0x0000000000000240       0x12 /home/rickwallen/netthreads/compiler/lib/libgcc.a(_pack_df.o)
+ .comment       0x0000000000000252       0x12 /home/rickwallen/netthreads/compiler/lib/libgcc.a(_unpack_df.o)
+ .comment       0x0000000000000264       0x12 /home/rickwallen/netthreads/compiler/lib/libspe.a(mulsi.o)
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges  0x0000000000000000       0xa0
+ *(.debug_aranges)
+ .debug_aranges
+                0x0000000000000000       0x20 /home/rickwallen/netthreads/compiler/lib/libgcc.a(_addsub_df.o)
+ .debug_aranges
+                0x0000000000000020       0x20 /home/rickwallen/netthreads/compiler/lib/libgcc.a(_mul_df.o)
+ .debug_aranges
+                0x0000000000000040       0x20 /home/rickwallen/netthreads/compiler/lib/libgcc.a(_si_to_df.o)
+ .debug_aranges
+                0x0000000000000060       0x20 /home/rickwallen/netthreads/compiler/lib/libgcc.a(_pack_df.o)
+ .debug_aranges
+                0x0000000000000080       0x20 /home/rickwallen/netthreads/compiler/lib/libgcc.a(_unpack_df.o)
+
+.debug_pubnames
+                0x0000000000000000       0xcf
+ *(.debug_pubnames)
+ .debug_pubnames
+                0x0000000000000000       0x2c /home/rickwallen/netthreads/compiler/lib/libgcc.a(_addsub_df.o)
+ .debug_pubnames
+                0x000000000000002c       0x1f /home/rickwallen/netthreads/compiler/lib/libgcc.a(_mul_df.o)
+ .debug_pubnames
+                0x000000000000004b       0x22 /home/rickwallen/netthreads/compiler/lib/libgcc.a(_si_to_df.o)
+ .debug_pubnames
+                0x000000000000006d       0x22 /home/rickwallen/netthreads/compiler/lib/libgcc.a(_thenan_df.o)
+ .debug_pubnames
+                0x000000000000008f       0x1f /home/rickwallen/netthreads/compiler/lib/libgcc.a(_pack_df.o)
+ .debug_pubnames
+                0x00000000000000ae       0x21 /home/rickwallen/netthreads/compiler/lib/libgcc.a(_unpack_df.o)
+
+.debug_info     0x0000000000000000     0x105d
+ *(.debug_info .gnu.linkonce.wi.*)
+ .debug_info    0x0000000000000000      0x43c /home/rickwallen/netthreads/compiler/lib/libgcc.a(_addsub_df.o)
+ .debug_info    0x000000000000043c      0x429 /home/rickwallen/netthreads/compiler/lib/libgcc.a(_mul_df.o)
+ .debug_info    0x0000000000000865      0x1c1 /home/rickwallen/netthreads/compiler/lib/libgcc.a(_si_to_df.o)
+ .debug_info    0x0000000000000a26      0x164 /home/rickwallen/netthreads/compiler/lib/libgcc.a(_thenan_df.o)
+ .debug_info    0x0000000000000b8a      0x2ae /home/rickwallen/netthreads/compiler/lib/libgcc.a(_pack_df.o)
+ .debug_info    0x0000000000000e38      0x225 /home/rickwallen/netthreads/compiler/lib/libgcc.a(_unpack_df.o)
+
+.debug_abbrev   0x0000000000000000      0x7b4
+ *(.debug_abbrev)
+ .debug_abbrev  0x0000000000000000      0x19d /home/rickwallen/netthreads/compiler/lib/libgcc.a(_addsub_df.o)
+ .debug_abbrev  0x000000000000019d      0x1bf /home/rickwallen/netthreads/compiler/lib/libgcc.a(_mul_df.o)
+ .debug_abbrev  0x000000000000035c       0xf4 /home/rickwallen/netthreads/compiler/lib/libgcc.a(_si_to_df.o)
+ .debug_abbrev  0x0000000000000450       0xba /home/rickwallen/netthreads/compiler/lib/libgcc.a(_thenan_df.o)
+ .debug_abbrev  0x000000000000050a      0x186 /home/rickwallen/netthreads/compiler/lib/libgcc.a(_pack_df.o)
+ .debug_abbrev  0x0000000000000690      0x124 /home/rickwallen/netthreads/compiler/lib/libgcc.a(_unpack_df.o)
+
+.debug_line     0x0000000000000000      0x516
+ *(.debug_line)
+ .debug_line    0x0000000000000000      0x12a /home/rickwallen/netthreads/compiler/lib/libgcc.a(_addsub_df.o)
+ .debug_line    0x000000000000012a      0x139 /home/rickwallen/netthreads/compiler/lib/libgcc.a(_mul_df.o)
+ .debug_line    0x0000000000000263       0x96 /home/rickwallen/netthreads/compiler/lib/libgcc.a(_si_to_df.o)
+ .debug_line    0x00000000000002f9       0x5a /home/rickwallen/netthreads/compiler/lib/libgcc.a(_thenan_df.o)
+ .debug_line    0x0000000000000353      0x118 /home/rickwallen/netthreads/compiler/lib/libgcc.a(_pack_df.o)
+ .debug_line    0x000000000000046b       0xab /home/rickwallen/netthreads/compiler/lib/libgcc.a(_unpack_df.o)
+
+.debug_frame    0x0000000000000000       0xfc
+ *(.debug_frame)
+ .debug_frame   0x0000000000000000       0x58 /home/rickwallen/netthreads/compiler/lib/libgcc.a(_addsub_df.o)
+ .debug_frame   0x0000000000000058       0x3c /home/rickwallen/netthreads/compiler/lib/libgcc.a(_mul_df.o)
+ .debug_frame   0x0000000000000094       0x28 /home/rickwallen/netthreads/compiler/lib/libgcc.a(_si_to_df.o)
+ .debug_frame   0x00000000000000bc       0x20 /home/rickwallen/netthreads/compiler/lib/libgcc.a(_pack_df.o)
+ .debug_frame   0x00000000000000dc       0x20 /home/rickwallen/netthreads/compiler/lib/libgcc.a(_unpack_df.o)
+
+.debug_str      0x0000000000000000      0x263
+ *(.debug_str)
+ .debug_str     0x0000000000000000      0x1f1 /home/rickwallen/netthreads/compiler/lib/libgcc.a(_addsub_df.o)
+                                        0x222 (size before relaxing)
+ .debug_str     0x00000000000001f1       0x45 /home/rickwallen/netthreads/compiler/lib/libgcc.a(_mul_df.o)
+                                        0x1fa (size before relaxing)
+ .debug_str     0x0000000000000236        0xc /home/rickwallen/netthreads/compiler/lib/libgcc.a(_si_to_df.o)
+                                        0x18a (size before relaxing)
+ .debug_str     0x0000000000000242        0x0 /home/rickwallen/netthreads/compiler/lib/libgcc.a(_thenan_df.o)
+                                        0x161 (size before relaxing)
+ .debug_str     0x0000000000000242       0x16 /home/rickwallen/netthreads/compiler/lib/libgcc.a(_pack_df.o)
+                                        0x1bf (size before relaxing)
+ .debug_str     0x0000000000000258        0xb /home/rickwallen/netthreads/compiler/lib/libgcc.a(_unpack_df.o)
+                                        0x1a1 (size before relaxing)
+
+.debug_loc      0x0000000000000000      0x8ad
+ *(.debug_loc)
+ .debug_loc     0x0000000000000000      0x343 /home/rickwallen/netthreads/compiler/lib/libgcc.a(_addsub_df.o)
+ .debug_loc     0x0000000000000343      0x2e5 /home/rickwallen/netthreads/compiler/lib/libgcc.a(_mul_df.o)
+ .debug_loc     0x0000000000000628       0x6d /home/rickwallen/netthreads/compiler/lib/libgcc.a(_si_to_df.o)
+ .debug_loc     0x0000000000000695      0x125 /home/rickwallen/netthreads/compiler/lib/libgcc.a(_pack_df.o)
+ .debug_loc     0x00000000000007ba       0xf3 /home/rickwallen/netthreads/compiler/lib/libgcc.a(_unpack_df.o)
+
+.debug_macinfo
+ *(.debug_macinfo)
+
+.debug_weaknames
+ *(.debug_weaknames)
+
+.debug_funcnames
+ *(.debug_funcnames)
+
+.debug_typenames
+ *(.debug_typenames)
+
+.debug_varnames
+ *(.debug_varnames)
+
+.gptab.sdata
+ *(.gptab.data)
+ *(.gptab.sdata)
+
+.gptab.sbss
+ *(.gptab.bss)
+ *(.gptab.sbss)
+                0x00000000040ffffc                . = 0x40ffffc
+                0x00000000040ffffc                _sp = ALIGN (0x4)
+
+/DISCARD/
+ *(.note.GNU-stack)
+LOAD /home/rickwallen/netthreads/compiler/lib/libspe.a
+LOAD /home/rickwallen/netthreads/compiler/lib/mylibc.a
+LOAD /home/rickwallen/netthreads/compiler/lib/mylibm.a
+LOAD /home/rickwallen/netthreads/compiler/lib/mylibc.a
+LOAD /home/rickwallen/netthreads/compiler/lib/libgcc.a
+LOAD /home/rickwallen/netthreads/compiler/lib/libspe.a
+LOAD /home/rickwallen/netthreads/compiler/lib/libspe.a
+LOAD /home/rickwallen/netthreads/compiler/lib/libspe.a
+LOAD /home/rickwallen/netthreads/compiler/lib/mylibc.a
+OUTPUT(ricks_netfpga_dns elf32-bigmips)
+
+.pdr            0x0000000000000000      0x7c0
+ .pdr           0x0000000000000000      0x160 nf2.o
+ .pdr           0x0000000000000160       0xc0 support.o
+ .pdr           0x0000000000000220       0x60 support_no_inline.o
+ .pdr           0x0000000000000280      0x260 ricks_netfpga_dns.o
+ .pdr           0x00000000000004e0       0x20 arp.o
+ .pdr           0x0000000000000500       0x60 pktbuff.o
+ .pdr           0x0000000000000560       0x20 ../common/lib/uni_alloc.a(FREE.o)
+ .pdr           0x0000000000000580       0x20 ../common/lib/uni_alloc.a(INIT_MEM.o)
+ .pdr           0x00000000000005a0       0x20 ../common/lib/uni_alloc.a(MALLOC.o)
+ .pdr           0x00000000000005c0       0x40 /home/rickwallen/netthreads/compiler/lib/libspe.a(udivmod.o)
+ .pdr           0x0000000000000600       0x20 /home/rickwallen/netthreads/compiler/lib/libspe.a(udivmodsi4.o)
+ .pdr           0x0000000000000620       0x20 /home/rickwallen/netthreads/compiler/lib/mylibc.a(memset.o)
+ .pdr           0x0000000000000640       0x20 /home/rickwallen/netthreads/compiler/lib/mylibc.a(strcat.o)
+ .pdr           0x0000000000000660       0x20 /home/rickwallen/netthreads/compiler/lib/mylibc.a(strcpy.o)
+ .pdr           0x0000000000000680       0x40 /home/rickwallen/netthreads/compiler/lib/mylibc.a(strtol.o)
+ .pdr           0x00000000000006c0       0x20 /home/rickwallen/netthreads/compiler/lib/mylibc.a(strchr.o)
+ .pdr           0x00000000000006e0       0x20 /home/rickwallen/netthreads/compiler/lib/mylibc.a(memcmp.o)
+ .pdr           0x0000000000000700       0x20 /home/rickwallen/netthreads/compiler/lib/mylibc.a(strtok.o)
+ .pdr           0x0000000000000720       0x20 /home/rickwallen/netthreads/compiler/lib/mylibc.a(strtok_r.o)
+ .pdr           0x0000000000000740       0x20 /home/rickwallen/netthreads/compiler/lib/mylibc.a(strlen.o)
+ .pdr           0x0000000000000760       0x20 /home/rickwallen/netthreads/compiler/lib/mylibc.a(strcmp.o)
+ .pdr           0x0000000000000780       0x20 /home/rickwallen/netthreads/compiler/lib/mylibc.a(memcpy.o)
+ .pdr           0x00000000000007a0       0x20 /home/rickwallen/netthreads/compiler/lib/libspe.a(mulsi.o)
+
+.mdebug.abi32   0x0000000000000000        0x0
+
+.debug_ranges   0x0000000000000000       0xb8
+ .debug_ranges  0x0000000000000000       0x20 /home/rickwallen/netthreads/compiler/lib/libgcc.a(_addsub_df.o)
+ .debug_ranges  0x0000000000000020       0x58 /home/rickwallen/netthreads/compiler/lib/libgcc.a(_mul_df.o)
+ .debug_ranges  0x0000000000000078       0x40 /home/rickwallen/netthreads/compiler/lib/libgcc.a(_pack_df.o)
